@@ -1,0 +1,19 @@
+{
+  "title": "Add your taxpayer information and a payout method | Help Center",
+  "short_description": "",
+  "article": "In order to receive your earnings, you need to add a payout method.1. Log into your Fairly account by navigating to fairly.com, click <b>Log in </b>in the top right corner, and enter your account credentials.\n2. Once you're in the platform, click your <b>profile photo</b> in the top right corner and select <b>Payout method and taxes</b>.\n3. Click the green <b>Add</b> button to add your taxpayer information and set up a W-9 form. \n   1. To complete this section, you'll need the following information:\n      1. Your Tax classification \n      2. Your Tax ID number (SSN or EIN)\n      3. Your address\n   2. Enter the information in the appropriate fields, and click <b>Submit</b>.\n   3. Once completed, you'll submit your W-9 and the process is completed.\n4. Next, go back to <b>Payout method and taxes</b>. \n5. Click the green <b>Add</b> button to add your payout method.\n   1. To complete this section, you'll need the following information:\n      1. Your bank account type and account category\n      2. Your bank account's routing number\n      3. Your bank account's account number\n   2. Enter your information in the appropriate fields, and click <b>Submit</b>.Please note that as an advisor, your payout method will only be used to deposit your earnings, and you won't be charged to be part of the Fairly platform. Connecting with and adding homeowners is completely free.",
+  "category": "Advisors",
+  "claude_summary": "Instructions for adding taxpayer information via W-9 form and setting up a bank account payout method to receive earnings on Fairly platform.",
+  "keywords": [
+    "payout method",
+    "taxpayer information",
+    "W-9 form",
+    "earnings",
+    "bank account",
+    "routing number",
+    "tax ID",
+    "SSN",
+    "EIN",
+    "advisor payments"
+  ]
+}

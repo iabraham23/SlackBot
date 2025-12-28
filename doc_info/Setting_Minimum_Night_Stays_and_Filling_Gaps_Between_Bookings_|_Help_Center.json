@@ -1,0 +1,19 @@
+{
+  "title": "Setting Minimum Night Stays and Filling Gaps Between Bookings | Help Center",
+  "short_description": "",
+  "article": "You have flexible controls over how many nights guests are required to stay at your home. Whether you want to set a general rule, make exceptions for holidays and weekends, or allow guests to fill small gaps in your calendar, you can do it all from your Fairly dashboard. Here\u2019s a breakdown of the 3 main controls you have:___________________________________________________________1. <b>Default Minimum Stay (All dates)</b>This is the number of nights guests must book when reserving your home. It applies to <b>all dates by default</b>, unless you set custom rules (see #3 below).- <b>Where to adjust it:</b> Go to the <b>Listings</b> section of your dashboard, and <b>Access &amp; Policies</b>.\n- <b>Default setting:</b> It defaults to 2 nights, but you can change it to meet your needs\u2014e.g., 1 night if you want more bookings.\n- <b>Example:</b> If your default is 4 nights, guests won\u2019t be able to book stays shorter than that unless a short gap rule applies (see next section).___________________________________________________________2. <b>Fill Short Gaps Between Bookings</b>Have a 1 or 2 night gap between two longer bookings? You can choose to allow guests to book those shorter stays\u2014even if they\u2019re below your default or custom minimum stay.- <b>Tip:</b> We recommend enabling this because it is great for maximizing occupancy without reducing your general minimum stay.\n- <b>Where to enable it:</b> In the <b>Listings</b> section under your minimum night settings.\n- <b>What it does:</b> Lets guests book short gaps in your calendar without lowering your overall minimum stay.\n- <b>Set your minimum:</b> You can define the <b>shortest stay allowed</b>, like 2 nights. Stays shorter than this won\u2019t be bookable\u2014even in gaps.___________________________________________________________3. <b>Custom Minimum Stays (Date specific control)</b>Want different rules for weekends, holidays, or special events? You can override your default minimum stay for <b>specific check-in dates</b> using your pricing calendar.- <b>Where to set it:</b> Go to the <b>Pricing</b> tab and open your <b>calendar</b>.\n- <b>How it works:</b> Select the dates you'd like to adjust, and set a custom minimum stay.\n- <b>Example:</b> You might require a 2-night stay on weekdays but a 3-night minimum for Friday and Saturday check-ins. This helps avoid single-night stays on busy weekends.\n- <b>Important:</b> Custom minimum stays only apply to the <b>guest\u2019s check-in date</b>, not the entire stay.___________________________________________________________By combining these three settings, you have powerful control over how and when your home is booked\u2014balancing occupancy, guest convenience, and your personal hosting preferences. If you need help setting this up, reach out to our support team (<a href=\"mailto:support@fairly.com\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">support@fairly.com</a>) or visit your Listings and Pricing Calendar tabs to get started.",
+  "category": "Homeowners",
+  "claude_summary": "Guide to configuring minimum night stay requirements, including default settings, filling calendar gaps between bookings, and creating custom date-specific rules for weekends and holidays.",
+  "keywords": [
+    "minimum night stay",
+    "booking requirements",
+    "gap filling",
+    "calendar management",
+    "custom stays",
+    "weekend minimums",
+    "pricing calendar",
+    "occupancy optimization",
+    "check-in rules",
+    "listing policies"
+  ]
+}

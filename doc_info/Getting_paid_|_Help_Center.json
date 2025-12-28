@@ -1,0 +1,19 @@
+{
+  "title": "Getting paid | Help Center",
+  "short_description": "",
+  "article": "Here's what you need to know about getting paid through Fairly.  <b>Add a Payout Method</b>During onboarding, you will be asked to set up a payout method.  This includes linking a bank account for receiving funds and providing your tax ID number for year-end tax reporting.     Your linked bank account will be used to process ACH transfers for guest reservation payouts, caretaker cleaning fees, or revenue share distributions\u2014depending on your role.  You are solely responsible for ensuring the accuracy of your bank and tax information, and must notify Fairly immediately if your payout details are incorrect or have been changed without your authorization.   <b>Payout Timing</b>- For property owners, we will initiate your payout after the guest checks out for stays less than 30 nights. For stays longer than 30 nights, you will be paid in increments every 31 days, for the previous 30 nights that have elapsed. \n- For caretakers, we will initiate your cleaning fee payout after a reservation is marked as \u2018cleaned\u2019 in the Fairly Platform.\n- For caretakers and advisors, we will initiate your revenue share monthly. We initiate the transaction on the 5th of every month for the previous month's revenue share.\n- Important: In cases where Airbnb has not sent Fairly funds for a reservation, we are not able to initiate payout on the day of check-out. This may occur if the reservation occurs on a weekend. Payouts are only initiated once funds have been received for the applicable reservation. For example, in the case of a one-night stay that ends on a weekend, the funds may not be received until early the following week, which may delay your payout. Payouts are made via standard ACH, which typically take one business day to post after being initiated. ACH transactions are not processed on weekends or bank holidays; payouts scheduled on a non-business day will be initiated the following business day. The Payouts page in your dashboard lists every payout that has been initiated. The \u201cPosted\u201d date is the expected date funds will appear in your bank account. However, actual fund availability depends on your bank\u2019s processing time,  which may take up to 3 business days.   Fairly may occasionally delay a payout to review a transaction for fraud or regulatory compliance.  During these reviews, we may temporarily limit your account access or request additional identity verification.   <b>Payout Calculation</b>For property owners, each payout is calculated by subtracting the caretaker cleaning fee, the Fairly Platform Fee, the Fairly Processing Fee (if applicable), sales and lodging taxes, and the Third Party Channel Fees from the total reservation amount.  Fees are discussed further <a href=\"https://support.fairly.com/en/articles/9824587-platform-and-other-fees\">here</a>. Additional bank fees may apply, depending on your financial institution.  ",
+  "category": "Homeowners",
+  "claude_summary": "Explains payout methods, timing, and calculations for Fairly platform users including property owners, caretakers, and advisors receiving payments via ACH transfers.",
+  "keywords": [
+    "payout",
+    "payment",
+    "bank account",
+    "ACH transfer",
+    "property owner",
+    "caretaker",
+    "revenue share",
+    "cleaning fee",
+    "payout timing",
+    "tax ID"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Check-in method | Help Center",
+  "short_description": "",
+  "article": "Fairly makes it simple to use whatever lock option you believe is best for your home.  To set or change which lock your guests will enter your home with, click on Listings \u2192 Access and policies \u2192 Check-in method. Here you will be prompted to choose one of the entrance options below, and provide a description of how to use this lock that will be sent to guests 24 hours before their check-in.  unnamed.png Smart lockFairly\u2019s recommended smart lock option, more details <a href=\"https://support.fairly.com/en/articles/9757593-smart-locks\">here</a>.  KeypadSelect Keypad if your home has a static keypad with one entrance code.  When writing instructions to guests on how to enter your home, make sure you include the keypad\u2019s location. If you have a static code include that here. Or you can send the code to the guest in the Messaging tab. LockboxSelect Lockbox if your guests will use a static code to unlock a lockbox that contains a key to your home.  When writing instructions to guests on how to enter your home, make sure you include the lockbox\u2019s code and location.  If it is not obvious, also describe how the guest can put their key back in the lockbox when their stay is over. Building staffSelect Building staff if there is a designated building employee who will let your guests into your home.  Keep in mind that you should only use this option if the building staff are present 24 hours a day.  When writing instructions to guests on how to enter your home, make sure to describe how they can find staff members and identify themselves as your guests. Key pick-upSelect Key pick-up if your caretaker will be present upon guest arrival to give your guests their key.  When writing instructions to guests, make sure to identify the time and location of the pick-up to avoid confusion. OtherSelect Other if your pick-up will use an alternative method to those listed above, such as a hidden key, remote key handoff, or mobile app.  When writing instructions to guests on how to enter your home, please provide as much information as possible so your guests are not confused by your check-in option. ",
+  "category": "Homeowners",
+  "claude_summary": "Explains how to set and configure different check-in methods for guests, including smart locks, keypads, lockboxes, building staff, key pick-up, and other options.",
+  "keywords": [
+    "check-in method",
+    "smart lock",
+    "keypad",
+    "lockbox",
+    "building staff",
+    "key pick-up",
+    "guest access",
+    "entrance code",
+    "lock options",
+    "check-in instructions"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Dynamic pricing | Help Center",
+  "short_description": "",
+  "article": "Your home is one-of-a-kind; dynamic pricing ensures that your pricing is, too. Fairly partners with Wheelhouse to provide your home with competitive pricing strategies to meet your goals.  The pricing algorithm analyzes 20 billion data points every day from short term rentals across the US to give your home a technical edge over your local market.  Fairly gives you the tools to edit any aspect of your pricing in seconds, letting you combine your expertise with the pricing algorithm. How does dynamic pricing work?To determine your nightly fare, the pricing algorithm first determines the baseline value of your home, and then adjusts it for daily demand. Base nightly priceBefore evaluating variable demand, the pricing algorithm starts with understanding the baseline value of your home.  To find the median nightly value of your home, it analyzes a plethora of aspects of your property, from parking spaces to pet fees.  These factors can be sorted into four major categories:1. Attributes of your home such as bedrooms, bathrooms, parking spaces, number of guests, type of home\n2. Additional fees you apply to your home such as cleaning fees and pet fees\n3. Booking performance of your home and other short term rentals in your area\n4. Location of your home - whether it is rural, urban, suburbanDemand modelTo determine the daily value of your home, the pricing algorithm analyzes any factor that could impact demand for your property.  This includes:1. Time (day of the week, seasonal trends, local events, holidays) \n2. Proximity to booking dates (last minute booking, far in advance booking)\n3. Demand (current demand, historical demand, predicted demand)\n4. More factors such as vacancy gaps, single home vs multiple homes  These factors are reviewed daily to make sure your home\u2019s prices are as competitive as possible. How can I customize dynamic pricing?Fairly allows you to adjust your pricing strategy as you feel fit.  Read more about how you can edit your Pricing Dashboard <a href=\"https://support.fairly.com/en/articles/9757230-pricing-dashboard\">here</a>.",
+  "category": "Homeowners",
+  "claude_summary": "Fairly partners with Wheelhouse to offer dynamic pricing for vacation rentals, analyzing billions of data points daily to optimize rates based on property attributes and market demand.",
+  "keywords": [
+    "dynamic pricing",
+    "Wheelhouse",
+    "pricing algorithm",
+    "nightly rates",
+    "demand model",
+    "vacation rental pricing",
+    "competitive pricing",
+    "pricing dashboard",
+    "short term rentals",
+    "property value"
+  ]
+}

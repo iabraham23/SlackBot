@@ -1,0 +1,19 @@
+{
+  "title": "Adding your taxpayer information and a payout method | Help Center",
+  "short_description": "",
+  "article": "As a caretaker, adding a payout method is required in order to get paid. Your payout method will only be used to deposit your earnings as caretakers are not charged to be part of the Fairly platform. <b>Please note</b>: as a caretaker, you will not be able to receive cleaning proposals from owners until you add your taxpayer information and a payout method. <b>To add your taxpayer information:</b>1. Log into your Fairly account by navigating to <a href=\"https://app.fairly.com\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">app.fairly.com</a> and entering your account credentials.\n2. Once you're logged in, click your <b>profile photo</b> in the top right corner and select <b>Payout method and taxes</b>.\n3. Click the green <b>Add</b> button to add your taxpayer information and set up a W-9 form.\n   1. To complete this section, you'll need the following information:\n      1. Your Tax classification\n      2. Your Tax ID number (SSN or EIN)\n      3. Your physical address\n   2. Enter the information in the appropriate fields, and click <b>Submit</b>.\n   3. Once completed, you'll submit your W-9 and the process is completed.To add a payout method:1. Next, go back to <b>Payout method and taxes</b>.\n2. Click the green <b>Add</b> button to add your payout method.\n   1. To complete this section, you'll need the following information:\n      1. Your bank account type and account category\n      2. Your bank account's routing number\n      3. Your bank account's account number\n   2. Enter your information in the appropriate fields, and click <b>Submit</b>.Once you've completed both sections, you're ready to receive cleaning proposals!",
+  "category": "Caretakers",
+  "claude_summary": "Caretakers must add taxpayer information (W-9) and bank payout method to receive payments and cleaning proposals on the Fairly platform.",
+  "keywords": [
+    "payout method",
+    "taxpayer information",
+    "W-9 form",
+    "caretaker payment",
+    "bank account",
+    "cleaning proposals",
+    "earnings deposit",
+    "tax ID",
+    "routing number",
+    "account setup"
+  ]
+}

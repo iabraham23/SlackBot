@@ -1,0 +1,19 @@
+{
+  "title": "Tax documents from Fairly | Help Center",
+  "short_description": "",
+  "article": "<b>General</b>Fairly issues various United States tax documents (\u201d1099 Information Returns\u201d) both to the United States Internal Revenue Service (\u201dIRS\u201d) and Fairly users.  The type of 1099 Information Return you receive depends on your role and the types of payments that you receive through the Fairly Platform.   <b>Tax Document Overview</b>When a user creates a payout profile on the Fairly Platform, Fairly establishes whether a user is a U.S. Person and subject to this 1099 Information Return reporting requirement by asking for certain identifying information and a certification from the user (\u201dForm W-9\u201d).  At the end of each calendar year, Fairly determines which 1099 Information Returns need to be issued based on the details of the Form W-9 and a review of the quantity and types of payments processed through the Fairly platform during the year. In certain cases, if your payments for the year do not exceed certain thresholds defined by the IRS, you will not receive a 1099 Information Return from Fairly.   The table below provides a summary of the 1099 Information Returns issued by Fairly, all of which should be available by January 31 of the year following the reportable calendar year:  The 1099 Information Returns will be issued and made available to you within the Fairly Platform. You will receive an e-mail to your registered e-mail address when the tax documents are ready.  These tax documents will also be filed with the IRS and with state tax authorities (where required).     <b>Resolving Problems with Tax Documents</b>If you are having issues reconciling your 1099 Information Returns to your transactions, or if the personal information on the tax document is incorrect, please send an e-mail to <a href=\"mailto:tax@fairly.com\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">tax@fairly.com</a>.  Note that we will only provide revised forms after we research and confirm potential errors.   <b>Disclosure Regarding Consent for Electronic Delivery Consent of IRS 1099 Information Returns</b>During the creation of your payout profile, you consent to receive electronic copies of your 1099 Information Returns.  At the time of that consent, you acknowledge and agree to the following terms:- You agree to electronically receive the IRS information tax returns 1099-K and 1099-NEC.  Your information returns will remain available electronically for one year from the date is originally made available to you, and a paper copy can be obtained by printing the electronic copy.\n- Your consent to receive electronic IRS information tax returns is effective immediately until you choose to withdraw it.\n- You have a computer with Internet access and are able to view HTML files and read Adobe PDF files.\n- You can request to be mailed a paper copy of the Information Return (such request will not be considered a withdrawal of consent), request an update of your contact information, or withdraw your consent by e-mailing us at <a href=\"mailto:tax@fairly.com\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">tax@fairly.com</a> or mailing to:\n  - Attn: Tax Department\n    Fairly Inc.\n    1120 SE Madison St.\n    Portland, OR 97214- Note that we will perform certain identity validation steps before we will issue a paper copy of the 1099 Information Return.",
+  "category": "Homeowners",
+  "claude_summary": "Fairly issues 1099 tax forms to US users based on payment types and thresholds. Documents are delivered electronically by January 31st and filed with IRS.",
+  "keywords": [
+    "1099",
+    "tax documents",
+    "IRS",
+    "Form W-9",
+    "electronic delivery",
+    "payout profile",
+    "1099-K",
+    "1099-NEC",
+    "tax reporting",
+    "US tax"
+  ]
+}
