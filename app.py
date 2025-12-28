@@ -1,3 +1,11 @@
+"""
+Main program to run the bot using Socket Mode from slack 
+
+- Simple chat user history 
+- document retrieval 
+- Online/Offline notifications
+"""
+
 import os
 import re
 import logging
