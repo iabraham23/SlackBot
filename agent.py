@@ -1,3 +1,11 @@
+"""
+"Agent" (not really) we use to identify relevant articles/documents 
+
+Implements caching meaning >80% of input tokens are significantly cheaper, cache resets every 5 mins according to Anthropic API 
+
+Could use alternatives like a vector db or we could cache within the app.py prompt itself which has its beneifts such as persistnt knowledge
+"""
+
 import os
 import json
 import logging
@@ -238,11 +246,11 @@ def test_retrieval(path="doc_info"):
         print(f"Query {i}: {query}")
         print("-" * 40)
         
-        # Step 1: Select relevant doc IDs (uses Haiku with caching)
+        # Select relevant doc IDs (uses Haiku with caching)
         doc_ids = select_relevant_docs(query, max_docs=2)
         print(f"  Selected IDs: {doc_ids}")
         
-        # Step 2: Get full documents
+        # Get full documents
         if doc_ids:
             docs = get_documents(doc_ids)
             for doc in docs:
