@@ -1,5 +1,5 @@
 """
-for fetching documents and creating doc_info
+for fetching documents and creating json objects for doc_info
 
 Documents are from https://support.fairly.com/en/, this code can be changed to accept other forms of documents as well 
 """
