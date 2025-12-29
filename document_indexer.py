@@ -30,7 +30,6 @@ BATCH_POLL_INTERVAL = 10  # seconds between polling
 
 
 def read_doc_info(filepath: Path) -> dict | None:
-    """Read a JSON file from doc_info directory."""
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
             return json.load(f)
@@ -40,7 +39,6 @@ def read_doc_info(filepath: Path) -> dict | None:
 
 
 def update_doc_info(filepath: Path, doc: dict) -> bool:
-    """Write updated document back to JSON file."""
     try:
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(doc, f, indent=2)
@@ -52,7 +50,6 @@ def update_doc_info(filepath: Path, doc: dict) -> bool:
 
 
 def build_prompt(title: str, article: str) -> str:
-    """Build the prompt for summary generation."""
     return f"""Analyze this help center article and provide a JSON response with exactly this structure:
 {{
     "claude_summary": "A concise summary of the article (max 30 words)",
@@ -69,9 +66,8 @@ Article content:
 
 
 def parse_response_text(response_text: str) -> dict | None:
-    """Parse JSON from Claude's response, handling markdown code blocks."""
-    text = response_text.strip()
     
+    text = response_text.strip()
     # Handle markdown code blocks
     if text.startswith("```"):
         text = text.split("```")[1]
@@ -87,14 +83,8 @@ def parse_response_text(response_text: str) -> dict | None:
 
 
 def collect_documents_to_process(doc_info_dir: Path, force: bool = False) -> List[Tuple[Path, dict]]:
-    """
-    Collect all documents that need processing.
-    
-    Returns:
-        List of (filepath, doc_dict) tuples for documents needing processing
-    """
+   
     to_process = []
-    
     if not doc_info_dir.exists():
         logger.error(f"Directory not found: {doc_info_dir}")
         return to_process
@@ -120,14 +110,7 @@ def collect_documents_to_process(doc_info_dir: Path, force: bool = False) -> Lis
 
 
 def create_batch_requests(documents: List[Tuple[Path, dict]]) -> Tuple[List[dict], Dict[str, Path]]:
-    """
-    Create batch request objects for the Anthropic API.
-    
-    Uses index-based custom_id and returns a mapping back to filepaths.
-    
-    Returns:
-        Tuple of (requests list, id_to_filepath mapping)
-    """
+
     requests = []
     id_to_filepath = {}
     
@@ -156,12 +139,7 @@ def create_batch_requests(documents: List[Tuple[Path, dict]]) -> Tuple[List[dict
 
 
 def submit_batch(requests: List[dict]) -> str | None:
-    """
-    Submit a batch to the Anthropic API.
     
-    Returns:
-        Batch ID if successful, None on error
-    """
     logger.info(f"Submitting batch with {len(requests)} requests")
     
     try:
@@ -174,12 +152,7 @@ def submit_batch(requests: List[dict]) -> str | None:
 
 
 def poll_batch_status(batch_id: str) -> str:
-    """
-    Poll until batch is complete.
     
-    Returns:
-        Final status: 'ended', 'failed', etc.
-    """
     logger.info(f"Polling batch {batch_id} for completion...")
     
     while True:
@@ -200,12 +173,7 @@ def poll_batch_status(batch_id: str) -> str:
 
 
 def process_batch_results(batch_id: str) -> Dict[str, dict]:
-    """
-    Retrieve and parse batch results.
-    
-    Returns:
-        Dict mapping custom_id to parsed summary data
-    """
+
     results = {}
     
     try:
@@ -234,15 +202,9 @@ def update_documents_with_results(
     results: Dict[str, dict],
     id_to_filepath: Dict[str, Path]
 ) -> dict:
-    """
-    Update document files with batch results.
-    
-    Returns:
-        Stats dict with processed/failed counts
-    """
     stats = {"processed": 0, "failed": 0}
     
-    # Create filepath to doc mapping for easy lookup
+    # Create filepath to doc mapping for lookup
     filepath_to_doc = {filepath: doc for filepath, doc in documents}
     
     for custom_id, summary_data in results.items():
@@ -267,7 +229,7 @@ def update_documents_with_results(
         else:
             stats["failed"] += 1
     
-    # Count any documents that didn't get results
+    # Count missing docs
     missing = len(documents) - len(results)
     if missing > 0:
         logger.warning(f"{missing} documents did not receive results")
@@ -277,17 +239,7 @@ def update_documents_with_results(
 
 
 def process_all_documents_batch(doc_info_dir: Path = DOC_INFO_DIR, force: bool = False) -> dict:
-    """
-    Process all documents using the Batch API.
-    
-    Args:
-        doc_info_dir: Path to the doc_info directory
-        force: If True, regenerate summaries even if they exist
-    
-    Returns:
-        Dict with counts of processed, skipped, and failed documents
-    """
-    # Collect documents to process
+ 
     documents = collect_documents_to_process(doc_info_dir, force)
     
     if not documents:
@@ -296,24 +248,21 @@ def process_all_documents_batch(doc_info_dir: Path = DOC_INFO_DIR, force: bool =
     
     logger.info(f"Found {len(documents)} documents to process")
     
-    # Create and submit batch
     requests, id_to_filepath = create_batch_requests(documents)
     batch_id = submit_batch(requests)
     
     if batch_id is None:
         return {"processed": 0, "skipped": 0, "failed": len(documents)}
     
-    # Poll for completion
+    # Try getting completion
     status = poll_batch_status(batch_id)
     
     if status != "ended":
         return {"processed": 0, "skipped": 0, "failed": len(documents)}
     
-    # Get and apply results
     results = process_batch_results(batch_id)
     stats = update_documents_with_results(documents, results, id_to_filepath)
     
-    # Count skipped from earlier
     json_files = list(doc_info_dir.glob("*.json"))
     stats["skipped"] = len(json_files) - len(documents)
     
@@ -322,7 +271,7 @@ def process_all_documents_batch(doc_info_dir: Path = DOC_INFO_DIR, force: bool =
 
 
 def print_summary(doc_info_dir: Path = DOC_INFO_DIR):
-    """Print a summary of all documents in doc_info."""
+
     json_files = list(doc_info_dir.glob("*.json"))
     
     print(f"\n{'='*60}")
@@ -332,14 +281,14 @@ def print_summary(doc_info_dir: Path = DOC_INFO_DIR):
     for filepath in json_files:
         doc = read_doc_info(filepath)
         if doc:
-            print(f"\n📄 {doc.get('title', 'Untitled')}")
+            print(f"\n {doc.get('title', 'Untitled')}")
             print(f"   Category: {doc.get('category', 'N/A')}")
             if "claude_summary" in doc:
                 print(f"   Summary: {doc['claude_summary']}")
             if "keywords" in doc:
                 print(f"   Keywords: {', '.join(doc['keywords'])}")
             else:
-                print("   ⚠️  Not yet indexed")
+                print("  Not yet indexed")
 
 
 if __name__ == "__main__":
