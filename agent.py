@@ -256,7 +256,7 @@ def test_retrieval(path="doc_info"):
             for doc in docs:
                 title = doc.get('title', doc['id'])
                 article_preview = doc.get('article', '')[:100] + '...'
-                print(f"  → {title}")
+                print(f" -- {title}")
                 print(f"    Preview: {article_preview}")
         else:
             print("  → No relevant documents found")
