@@ -20,14 +20,11 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Initialize Claude client
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
-
 # Configuration
+client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 CLAUDE_MODEL = "claude-sonnet-4-5-20250929"
 DOC_INFO_DIR = Path("doc_info")
-BATCH_POLL_INTERVAL = 10  # seconds between polling
-
+BATCH_POLL_INTERVAL = 10  # seconds between polling for batch completion 
 
 def read_doc_info(filepath: Path) -> dict | None:
     try:
